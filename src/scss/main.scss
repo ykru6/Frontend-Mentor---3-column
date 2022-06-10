@@ -1,0 +1,34 @@
+@charset 'utf-8';
+@use 'base';
+@use 'component';
+@use 'abstract';
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: 1218px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
