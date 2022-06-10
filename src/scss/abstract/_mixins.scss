@@ -1,0 +1,27 @@
+@use '../abstract/color' as *;
+@use '../abstract/function' as *;
+@use '../base/typo';
+
+@mixin figureCard($padding: rem(48px), $width) {
+    h2[class*="title"] {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: rem(42px);
+        font-weight: --bsd-700;
+
+        text-transform: uppercase;
+    }
+
+    width: $width;
+    
+    padding: rem($padding);
+
+    @content;
+}
+
+@mixin cardBorder($tl: 0px, $bl: 0px, $tr: 0px, $br: 0px) {
+    border-bottom-left-radius: $bl;
+    border-top-left-radius: $tl;
+    border-bottom-right-radius: $br;
+    border-top-right-radius: $tr;
+    
+}

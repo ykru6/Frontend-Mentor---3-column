@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --ld-400: 400;
+  --bsd-700: 700;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+}
+
+.attribution {
+  font-size: 0.9375rem;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.wrapper__card-sedans {
+  width: 307px;
+  padding: 3rem;
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(31deg, 77%, 52%);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.wrapper__card-sedans h2[class*=title] {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.625rem;
+  font-weight: --bsd-700;
+  text-transform: uppercase;
+}
+.wrapper__card-sedans .card-sedans__title {
+  margin-top: 1.75rem;
+}
+.wrapper__card-sedans .card-sedans__desc {
+  margin-top: 1.375rem;
+  line-height: 1.7;
+}
+.card-sedans__cta {
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(31deg, 77%, 52%);
+  border: 3px solid hsl(0deg, 0%, 95%);
+  border-radius: 50px;
+  margin-top: 5.3125rem;
+  width: 9.25em;
+  height: 3em;
+  transition: background-color 250ms ease-in-out 0s;
+}
+.card-sedans__cta:hover {
+  cursor: pointer;
+  background-color: hsla(0deg, 0%, 0%, 0);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.wrapper__card-suvs {
+  width: 307px;
+  padding: 3rem;
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(184deg, 100%, 22%);
+}
+.wrapper__card-suvs h2[class*=title] {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.625rem;
+  font-weight: --bsd-700;
+  text-transform: uppercase;
+}
+.wrapper__card-suvs .card-suvs__title {
+  margin-top: 1.75rem;
+}
+.wrapper__card-suvs .card-suvs__desc {
+  margin-top: 1.375rem;
+  line-height: 1.7;
+}
+.card-suvs__cta {
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(184deg, 100%, 22%);
+  border: 3px solid hsl(0deg, 0%, 95%);
+  border-radius: 50px;
+  margin-top: 5.3125rem;
+  width: 9.25em;
+  height: 3em;
+  transition: background-color 250ms ease-in-out 0s;
+}
+.card-suvs__cta:hover {
+  cursor: pointer;
+  background-color: hsla(0deg, 0%, 0%, 0);
+  color: hsl(0deg, 0%, 95%);
+}
+
+.wrapper__card-luxury {
+  width: 307px;
+  padding: 3rem;
+  color: hsl(0deg, 0%, 95%);
+  background-color: hsl(179deg, 100%, 13%);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.wrapper__card-luxury h2[class*=title] {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.625rem;
+  font-weight: --bsd-700;
+  text-transform: uppercase;
+}
+.wrapper__card-luxury .card-luxury__title {
+  margin-top: 1.75rem;
+}
+.wrapper__card-luxury .card-luxury__desc {
+  margin-top: 1.375rem;
+  line-height: 1.7;
+}
+.card-luxury__cta {
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(179deg, 100%, 13%);
+  border: 3px solid hsl(0deg, 0%, 95%);
+  border-radius: 50px;
+  margin-top: 5.3125rem;
+  width: 9.25em;
+  height: 3em;
+  transition: background-color 250ms ease-in-out 0s;
+}
+.card-luxury__cta:hover {
+  cursor: pointer;
+  background-color: hsla(0deg, 0%, 0%, 0);
+  color: hsl(0deg, 0%, 95%);
+}
+
+@media (max-width: 63.93em) {
+  .wrapper.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    top: 97%;
+  }
+  .wrapper.wrapper .wrapper__card-sedans {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .wrapper.wrapper .wrapper__card-luxury {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) {
+    width: 565px;
+    padding: 3rem;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) h2[class*=title] {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.625rem;
+    font-weight: --bsd-700;
+    text-transform: uppercase;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) :is(.card-luxury__cta, .card-sedans__cta, .card-suvs__cta) {
+    margin-top: 2.4375rem;
+  }
+}
+@media (max-width: 39.93em) {
+  .wrapper.wrapper {
+    top: 115%;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) {
+    width: 307px;
+    padding: 3rem;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) h2[class*=title] {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.625rem;
+    font-weight: --bsd-700;
+    text-transform: uppercase;
+  }
+  .wrapper.wrapper :is(.wrapper__card-luxury, .wrapper__card-sedans, .wrapper__card-suvs) :is(.card-luxury__cta, .card-sedans__cta, .card-suvs__cta) {
+    margin-top: 1.875rem;
+  }
+}
+
+html.desktop {
+  width: 1440px;
+  height: 800px;
+}
+html.desktop .design {
+  display: block;
+  position: absolute;
+  width: 1440px;
+  height: 800px;
+  max-width: unset;
+  content: url("../assets/design/desktop-design.jpg");
+}
+html.mobile {
+  width: 375px;
+  height: 1530px;
+}
+html.mobile .design {
+  display: block;
+  position: absolute;
+  width: 375px;
+  height: 1530px;
+  max-width: unset;
+  content: url("../assets/design/mobile-design.jpg");
+}
+
+.design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 255;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1218px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

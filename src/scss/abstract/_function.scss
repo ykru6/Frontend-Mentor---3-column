@@ -1,0 +1,21 @@
+@use '../abstract/color' as clr;
+@use "sass:map";
+@use "sass:math";
+
+@function rem($pxValue) {
+    @return math.div($pxValue, 16px) * 1rem;
+}
+
+@function em($pxValue) {
+    @return math.div($pxValue, 16px) * 1em;
+}
+
+@function clr($keys...) {
+    $value: clr.$colors;
+
+    @each $key in $keys {
+        $value: map-get($value, $key);
+    }
+
+    @return $value;
+}
